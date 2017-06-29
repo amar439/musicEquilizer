@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Music Equilizer</title>
+	<link rel="stylesheet" type="text/css" href="styles/nouislider.min.css">
+	<link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+</head>
+<body>
+	<div id="container">
+		<h1>Music Equilizer</h1>
+		<div class="main-content">
+			<div class="equilizers">
+				<div class="range-bar">
+					<div>-12 db</div>
+					<div>0</div>
+					<div>+12 db</div>
+				</div>
+				<div><div id="slider-vertical60" class="sliders"></div><div class="freq">60</div></div>
+				<div><div id="slider-vertical310" class="sliders"></div><div class="freq">310</div></div>
+				<div><div id="slider-vertical1k" class="sliders"></div><div class="freq">1k</div></div>
+				<div><div id="slider-vertical6k" class="sliders"></div><div class="freq">6k</div></div>
+				<div><div id="slider-vertical16k" class="sliders"></div><div class="freq">16k</div></div>
+			</div>
+			<div class="selection">
+				<div class="dropdown">
+					<button class="dropbtn" id="preset">Preset</button>
+				  <div id="presetDropdown" class="dropdown-content"></div>
+				</div>
+				<form class="save-selection">
+					<input type="text" name="preset-save" id="preset-name" class="preset-name" placeholder="Enter Preset Name">
+					<input type="submit" class="save" id="save" value="Save"></input>	
+				</form>
+			</div>
+		</div>
+		<div class="footer">
+			<h2 class="current-sel">Current Selection:<span id="current-selection">None</span></h2>	
+			<button id="clear-selection" class="clear-button">Clear Selection</button>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/wNumb.js"></script>
+	<script type="text/javascript" src="js/nouislider.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
